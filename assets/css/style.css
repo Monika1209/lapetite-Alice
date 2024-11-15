@@ -1,0 +1,645 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allison&display=swap');
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Nunito", sans-serif;
+}
+
+.container{
+    position: relative;
+}
+
+/* header */
+header{
+    background-color: #46362d;
+    padding: 10px;
+}
+header p{
+    text-align: center;
+    color: white;
+}
+
+.container .fixed{
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background-color: #C6CCDC;
+    position: fixed;
+    bottom: 35px;
+    right: 35px;
+    z-index: 1;
+}
+
+.container .fixed .circle{
+    position: absolute;
+    top: 18%;
+    left: 20%;
+    height: 100%;
+}
+
+.container .fixed .circle i{
+    font-size: 32px;
+}
+
+.container .circle2{
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background-color: #C6CCDC;
+    height: 100%;
+    display: none;
+}
+
+.container .circle2 i{
+    font-size: 25px;
+    top: 25%;
+    left: 30%;
+    position: absolute;
+    color: blue;
+}
+
+.fixed:hover .circle2{
+    display: block;
+    transform: scale(1.3);
+}
+
+
+/* Navbar */
+nav{
+    border-bottom: 1px solid rgb(205, 205, 205);
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 150px;
+    padding: 10px;
+    position: relative;
+}
+nav .logo{
+    width: 130px;
+    height: 80px;
+}
+nav .logo img{
+    width: 100%;
+    height: 100%;
+}
+nav .menu-container{
+    display: flex;
+    gap: 30px;
+}
+nav .menu-container .menu a{
+    color: #46362d;
+    text-decoration: none;
+    font-size: 16px;
+}
+nav .menu-container .menu a i{
+    padding-left: 5px;
+}
+nav .icons{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+nav .icons .price{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+nav .icons i{
+    font-size: 20px;
+    color: #46362d;
+}
+nav .icons .price .bag{
+    font-size: 35px;
+    color: #46362d;
+}
+nav .icons .price p{
+    font-size: 20px;
+    color: #46362d;
+}
+nav .menu-container .menu:hover{
+    border-bottom: 1px solid #46362d;
+}
+
+.dropdown{
+    width: 100%;
+    min-height: 300px;
+    /* border-bottom: 1px solid  rgb(205, 205, 205); */
+    position: absolute;
+    top: 60px;
+    left: 0;
+    display: none;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    z-index: +2;
+    background-color: white;
+}
+nav .menu-container .menu:hover .dropdown{
+    display: block;
+}
+.dropdown .row{
+    display: flex;
+    justify-content: center;
+    margin: 0px 50px;
+}
+.dropdown .row .col{
+    width: 220px;
+    min-height: 300px;
+    border: 1px solid rgba(231, 217, 217, 0.411);
+    padding: 20px;
+    border-top: none;
+    border-bottom: none;
+}
+
+.dropdown .row .col1{
+    width: 250px;
+}
+
+.dropdown2{
+    background-color: transparent;
+    top: 50px;
+}
+
+.dropdown .row2{
+    display: flex;
+    margin-left: 300px;
+}
+
+.dropdown .row2 .col2{
+    width: 220px;
+    min-height: 120px;
+    border: 1px solid rgba(231, 217, 217, 0.555);
+    background-color: white;
+    padding: 20px;
+    border-top: none;
+    border-bottom: none;
+}
+
+.dropdown .row .col3{
+    width: 400px;
+    min-height: 120px;
+    border: 1px solid rgba(231, 217, 217, 0.555);
+    background-color: white;
+    padding: 20px;
+    border-top: none;
+    border-bottom: none;
+}
+
+.dropdown .row .col3 img{
+    width: 100%;
+    height: 100px !important;
+}
+
+
+.dropdown .row .col h4{
+    padding-left: 20px;
+    color: #46362d;
+    padding-bottom: 5px;
+}
+.dropdown .row .col ul li{
+    list-style: none;
+    margin-left: -20px;
+    padding: 5px 0;
+}
+.dropdown .row .col ul li a{
+    font-size: 15px;
+}
+.dropdown .row .col ul li:hover{
+    border-bottom: 1px solid #46362d;
+    width: 60px;
+}
+.dropdown .row .col img{
+    width: 100%;
+    height: 150px;
+    padding-bottom: 10px;
+}
+.dropdown .row .col img:hover{
+    border-bottom: 1px solid #46362d;
+}
+.dropdown .row .col h6{
+    text-align: center;
+    color: #46362d;
+    margin-top: 50px;
+}
+.dropdown .row .col h5{
+    text-align: center;
+    color: #46362d;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.bar{
+    display: none;
+}
+
+/* ------------------------------   Navbar End ------------------------------ */
+
+
+/* -------------------------------------Box1 Start ----------------- */
+
+.container .box1{
+    width: 100%;
+    height: 500px;
+    padding: 0 20px;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.container .box1 img{
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+
+.container .box1 h1{
+    position: absolute;
+    top: 90px;
+    left: 40%;
+    font-size: 120px;
+    font-weight: normal;
+    color: white;
+    font-family: "Allison", cursive;
+}
+
+.container .box1 h2{
+    position: absolute;
+    bottom: 180px;
+    left: 35%;
+    font-size: 30px;
+    font-weight: normal;
+    color: white;
+}
+
+.container .box1 .btn1{
+    width: 140px;
+    height: 22px;
+    position: absolute;
+    background-color: #94705C;
+    border: none;
+    outline: none;
+    bottom: 120px;
+    left: 43%;
+}
+
+.container .box1 button:hover{
+    background-color: #46362d;
+}
+
+.container .box1 .btn2{
+    width: 140px;
+    height: 40px;
+    position: absolute;
+    background-color: #94705C;
+    border: none;
+    outline: none;
+    bottom: 60px;
+    left: 43%;
+    color: white;
+    font-size: 16px;
+    /* padding: 20px; */
+}
+
+.container .box2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+}
+
+.box2  .one{
+    display: flex;
+    gap: 20px;
+}
+
+.container .box2 .image{
+    /* border: 1px solid black; */
+    width: 305px;
+    height: 350px;
+}
+
+.container .box2 .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.container .box2 .image .baby{
+    position: absolute;
+    top: 40%;
+    left: 8%;
+    font-weight: normal;
+    color: white;
+}
+
+.container .box2 .image .women{
+    position: absolute;
+    top: 40%;
+    left: 34%;
+    font-weight: normal;
+    color: white;
+}
+
+.container .box2 .image .men{
+    position: absolute;
+    top: 40%;
+    left: 61%;
+    font-weight: normal;
+    color: white;
+}
+
+.container .box2 .image .homewear{
+    position: absolute;
+    top: 40%;
+    right: 10%;
+    font-weight: normal;
+    color: white;
+}
+
+/* ----------------------------- Paragraph Box -------------------------------------- */
+
+.paragraph-box{
+    width: 100%;
+    min-height: 300px;
+    /* border: 1px solid black; */
+    margin: 20px 20px;
+    text-align: center;
+    padding: 50px;
+    background-color: rgba(184, 179, 179, 0.185);
+}
+
+.paragraph-box .content h4{
+    color: rgb(82, 78, 78);
+    font-weight: normal;
+    font-size: 17px;
+}
+
+.paragraph-box .content h2{
+    font-weight: normal;
+    font-size: 20px;
+    padding: 0 20px;
+    margin-bottom: 20px;
+}
+
+.paragraph-box .content a{
+    text-decoration: none;
+    color: gray;
+    font-size: 18px;
+}
+
+.container .box3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 60px;  
+}
+
+.container .box3 .image{
+    /* border: 1px solid black; */
+    width: 305px;
+    height: 450px;
+    position: relative;
+}
+
+.container .box3 .img1:hover{
+    transform: scale(0.95);
+}
+
+.container .box3 .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hide {
+    position: absolute;
+    /* border: 1px solid black; */
+    width: 305px;
+    height: 450px;
+    top: 0;
+    display: none;
+    
+}
+
+.image:hover .hide{
+    display: block;
+}
+
+.image .hide img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container .box3 .image .order{
+    position: absolute;
+    top: 0;
+    left: 10px;
+    font-weight: normal;
+    background-color: white;
+    border-radius: 6px;
+    margin-top: 10px;
+    padding: 2px 10px;
+}
+
+.container .box3 .image .foot{
+    text-align: left;
+}
+
+.container .box3 .image .foot h4{
+    color: rgb(8, 8, 8);
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.container .box3 .image .foot h3{
+    color: rgb(66, 65, 65);
+    font-weight: normal;
+    font-size: 16px;
+}
+
+/* ------------------------------ Paragraph-End ------------------------------- */
+.content1{
+    width: 100%;
+    min-height: 200px;
+    text-align: center;
+    padding: 0 20px;
+    margin-top: 100px;
+}
+
+.content1 h4{
+    font-weight: 400;
+}
+
+.content1 h1{
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.content1 a{
+    text-decoration: none;
+    color: gray;
+    font-size: 17px;
+    /* background-color: rgba(184, 179, 179, 0.11); */
+    background-color: none;
+}
+
+.video{
+    width: 100%;
+    height: 515px;
+    padding: 20px;
+}
+
+.video iframe{
+    width: 100%;
+    height: 100%;
+}
+
+.content2{
+    width: 100%;
+    min-height: 200px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.content2 h4{
+    font-weight: 400;
+}
+
+.content2 h1{
+    font-weight: 500;
+    font-size: 20px;
+    padding: 0 20px;
+}
+
+.content2 a{
+    text-decoration: none;
+    color: gray;
+    font-size: 17px;
+    /* background-color: rgba(184, 179, 179, 0.11); */
+    background-color: none;
+}
+
+/* ---------------------- Logo-footer start --------------------------------------- */
+
+.logo-footer{
+    width: 100%;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.logo-footer h3{
+    font-weight: 500;
+    text-align: center;
+    color: rgb(61, 59, 59);
+}
+
+.logo-footer .logos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 40px;
+}
+
+.logo-footer .logos .img{
+    width: 130px;
+    height: 90px;
+    /* border: 1px solid black; */
+}
+
+.logo-footer .logos .img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ---------------------------------Footer-part Start --------------------------------------*/
+
+.footer{
+    width: 100%;
+    height: 250px;
+    background-color: #46362d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.footer .col{
+    width: 300px;
+    min-height: 300px;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 40px;
+}
+
+.footer .col h4{
+    color: white;
+    padding-top: 10px;
+    font-weight: normal;
+}
+
+
+.footer .col a{
+    text-decoration: none;
+    color: white;
+}
+
+.footer .col a:hover{
+    text-decoration: underline;
+}
+
+.footer .col .icon{
+    display: flex;
+    gap: 20px;
+    padding-left: 5px;
+}
+.footer .col .icon i{
+    color: white;
+}
+
+.footer .col .btns input{
+    width: 180px;
+    height: 40px;
+    padding-left: 15px;
+}
+
+.footer .col .btns input::placeholder{
+    font-size: 17px;
+}
+
+.footer .col .btns button{
+    width: 100px;
+    height: 40px;
+    color: white;
+    background-color: #544844;
+    border: none;
+    outline: none;
+}
+
+.last{
+    width: 100%;
+    height: 40px;
+    background-color: #46362d;
+    padding-bottom: 10px;
+}
+
+.last h4{
+    text-align: center;
+    color: white;
+    font-weight: normal;
+}
+

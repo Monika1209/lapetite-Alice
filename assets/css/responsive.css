@@ -1,0 +1,400 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@media (max-width: 1200px){
+    header {
+        width: 100%;
+        background-color: #46362d;
+        padding: 10px;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        /* padding-left: 10px; */
+        gap: 20px;
+    }
+
+    nav .menu-container {
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+        display: none;
+    }
+
+    nav .icons {
+        display: flex;
+        gap: 10px;
+        margin-right: 210px;
+        justify-content: space-evenly;
+        display: none;
+    }
+
+    nav .icons i {
+        font-size: 15px;
+    }
+
+    nav .icons .price p {
+        font-size: 15px;
+    }
+
+    nav .icons .price .bag {
+        font-size: 20px;
+    }
+
+
+    .bar{
+        position: absolute;
+        top: 40px;
+        right: 20px;
+        display: block;
+    }
+
+    .container .box1 {
+        width: 100%;
+        height: 350px;
+        padding: 0 20px;
+    }
+
+    .container .box1 h1 {
+        top: 0;
+        text-align: center;
+        font-size: 100px;
+    }
+
+    .container .box1 h2 {
+        top: 35%;
+        left: 24%;
+        font-size: 35px;
+    }
+
+    .container .box1 .btn1 {
+        left: 40%;
+        bottom: 32%;
+    }
+
+    .container .box1 .btn2 {
+        left: 40%;
+        bottom: 12%;
+    }
+
+    .container .box2 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 0 20px;
+    }
+
+    .box2 .one{
+        width: 100%;
+    }
+
+    .box2 .one .image{
+        width: 48%;
+        height: 350px;
+    }
+
+    .box2 .one .image img{
+        object-position: top;
+    }
+
+    .container .box2 .one .image .baby {
+        top: 20%;
+        font-size: 40px;
+        left: 10%;
+    }
+
+    .container .box2 .one .image .women {
+        top: 20%;
+        font-size: 40px;
+        left: 65%;
+    }
+
+    .container .box2 .one .image .homewear {
+        top: 70%;
+        right: 15%;
+        font-size: 40px;
+    }
+
+    .container .box2 .one .image .men {
+        top: 70%;
+        left: 20%;
+        font-size: 40px;
+    }
+
+    .container .box3 {
+        padding: 0 20px;
+    }
+
+    .logo-footer .logos {
+        gap: 20px;
+        padding: 0 20px;
+    }
+
+    .logo-footer .logos .img {
+        width: 110px;
+    }
+
+    .footer {
+        height: 370px;
+        gap: 0;
+    }
+
+    .last h4 {
+        padding-top: 10px;
+    }
+
+    .container .fixed {
+        right: 45px;
+    }
+
+}
+
+
+/*------------------ Phone-Responsive ---------------------- */
+
+@media (max-width: 599px){
+    header {
+        width: 100%;
+        background-color: #46362d;
+        padding: 10px;
+    }
+
+    header p{
+        font-size: 10px;
+    }
+
+    .container .fixed {
+        width: 35px;
+        height: 35px;
+        bottom: 10px;
+        right: 10px;
+    }
+
+    .container .fixed .circle i{
+        font-size: 22px;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        /* padding-left: 10px; */
+        gap: 20px;
+    }
+
+    nav .menu-container {
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+        display: none;
+    }
+
+    nav .icons {
+        display: flex;
+        gap: 10px;
+        margin-right: 210px;
+        justify-content: space-evenly;
+        display: none;
+    }
+
+    nav .icons i {
+        font-size: 15px;
+    }
+
+    nav .icons .price p {
+        font-size: 15px;
+    }
+
+    nav .icons .price .bag {
+        font-size: 20px;
+    }
+
+    .bar{
+        position: absolute;
+        top: 40px;
+        right: 20px;
+        display: block;
+    }
+
+    .container .box1 {
+        width: 100%;
+        height: 350px;
+        padding: 0 20px;
+    }
+
+    .container .box1 h1 {
+        top: 0;
+        left: 35%;
+        font-size: 100px;
+    }
+
+    .container .box1 h2 {
+        top: 35%;
+        left: 70px;
+        font-size: 22px;
+    }
+
+    .container .box1 .btn1 {
+        left: 38%;
+        bottom: 32%;
+    }
+
+    .container .box1 .btn2 {
+        left: 38%;
+        bottom: 12%;
+    }
+
+    .container .box2 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 0 10px;
+    }
+
+    .box2 .one{
+        width: 100%;
+    }
+
+    .box2 .one .image{
+        width: 48%;
+        height: 100px;
+    }
+
+    .container .box2 .one .image .baby {
+        top: 15%;
+        font-size: 19px;
+        left: 10%;
+    }
+
+    .container .box2 .one .image .women {
+        top: 15%;
+        font-size: 19px;
+        left: 65%;
+    }
+
+    .container .box2 .one .image .homewear {
+        top: 70%;
+        right: 10%;
+        font-size: 19px;
+    }
+
+    .container .box2 .one .image .men {
+        top: 70%;
+        left: 20%;
+        font-size: 19px;
+    }
+
+    .paragraph-box {
+        width: 100%;
+        margin: 20px auto;
+        padding: 10px;
+    }
+
+    .paragraph-box h2 {
+        font-size: 15px;
+    }
+
+    .paragraph-box a {
+        font-size: 17px;
+        margin-top: -10px;
+    }
+
+    .container .box3 {
+        display: flex;
+        gap: 70px;
+        flex-direction: column;
+    }
+
+    .content1{
+        padding: 0 20px;
+    }
+
+    .content1 h4 {
+        font-size: 15px;
+    }
+
+    .content1 h1 {
+        font-size: 14px;
+        text-align: justify;
+    }
+
+    .video{
+        width: 100%;
+        height: 300px;
+        margin: 30px auto;
+        padding: 0 10px;
+    }
+
+    .content2{
+        margin-top: 0px;
+        padding: 0px 20px;
+    }
+
+    .content2 h4 {
+        font-size: 15px;
+    }
+
+    .content2 h1 {
+        font-size: 14px;
+        text-align: justify;
+    }
+
+    .content2 a {
+        font-size: 15px;
+    }
+
+    .logo-footer {
+        width: 100%;
+        margin-top: 100px;
+    }
+
+    .logo-footer h3 {
+        font-weight: 400;
+        font-size: 17px;
+    }
+
+    .logo-footer .logos {
+        display: flex;
+        gap: 4px;
+        flex-direction: column;
+    }
+
+    .logo-footer .logos .img{
+        width: 80px;
+        height: 40px;
+    }
+
+    .footer {
+        width: 100%;
+        min-height: 1150px ;
+        display: flex;
+        gap: 5px;
+        flex-direction: column;
+    }
+
+    .footer .col:nth-child(1){
+        padding-top: 70px;
+    }
+
+    .footer .col .icon {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .last{
+        width: 100%;
+        height: 100%;
+    }
+
+    .last h4 {
+        font-size: 12px;
+        padding: 20px 0;
+    }
+
+}
+
+
